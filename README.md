@@ -25,8 +25,9 @@
 
 ### Change user password
 
-1. `passwd majid`
-2. `sudo passwd root`
+1. `sudo su -` 
+2. `passwd majid`
+3. `sudo passwd root`
 
 ### Setting up python
 
