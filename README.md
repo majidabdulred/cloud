@@ -90,7 +90,7 @@ server {
     client_max_body_size 100M;
 }
 ```
-3. `systemmctl restart nginx`
+3. `systemctl restart nginx`
 
 ### Setting up papertrail
 
