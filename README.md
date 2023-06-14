@@ -40,7 +40,7 @@
 
 1. `sudo apt-get install git`
 2. `git init`
-3. `git remote add origin git@username:username/repo.git`
+3. `git remote add origin git@github.com:username/repo.git`
 4. `cd ~/.ssh`
 5. `ssh-keygen -t rsa -b 4096 -C "name@email.com"`
 6. Copy the public key to GitHub deploy keys
