@@ -80,10 +80,11 @@ git pull origin main
 
 1. `sudo apt-get install nginx`
 2. `sudo nano /etc/nginx/sites-enabled/backend`
+3. `sudo rm /etc/nginx/sites-enabled/default`
 ```nginx
 server {
     listen 80;
-    server_name 52.15.210.61;
+    server_name $host;
     location / {
         proxy_pass http://127.0.0.1:8000;
     }
