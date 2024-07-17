@@ -79,8 +79,9 @@ git pull origin main
 ### Setting up nginx
 
 1. `sudo apt-get install nginx`
-2. `sudo nano /etc/nginx/sites-enabled/backend`
-3. `sudo rm /etc/nginx/sites-enabled/default`
+2. `sudo rm /etc/nginx/sites-enabled/default`
+3. `sudo nano /etc/nginx/sites-enabled/backend`
+4. Paste this code below if you application is running on port 8000 . Otherwise replace the it with the port you app is running on.
 ```nginx
 server {
     listen 80;
@@ -91,7 +92,7 @@ server {
     client_max_body_size 100M;
 }
 ```
-3. `systemctl restart nginx`
+3. `sudo systemctl restart nginx`
 
 ### Setting up papertrail
 
